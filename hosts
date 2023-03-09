@@ -1,0 +1,43 @@
+# Title: GasterBlacklist/hosts
+#
+# This is a list containing a list of unwanted urls. Is divided in sections.
+# Note: This is a complementary list, meaning you will mostly find non-standard urls.
+# Structure taken from the wonderfull people:  
+# StevenBlack/hosts https://github.com/StevenBlack/hosts
+#
+# ===============================================================
+
+127.0.0.1 localhost
+127.0.0.1 localhost.localdomain
+127.0.0.1 local
+255.255.255.255 broadcasthost
+::1 localhost
+::1 ip6-localhost
+::1 ip6-loopback
+fe80::1%lo0 localhost
+ff00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+0.0.0.0 0.0.0.0
+
+# START of Blacklist
+
+#=====================================
+# Section: Import from custom Pi-Hole list.
+
+0.0.0.0 ck.getcookiestxt.com
+
+
+
+# END of Blacklist
+
+# blacklist
+#
+# The contents of this file (containing a listing of additional domains in
+# 'hosts' file format) are appended to the unified hosts file during the
+# update process. For example, uncomment the following line to block
+# 'example.com':
+
+# 0.0.0.0 example.com
