@@ -1354,6 +1354,7 @@ ff02::3 ip6-allhosts
 
 # Yandex
 0.0.0.0 appmetrica.yandex.ru
+0.0.0.0 metrika.yandex.ru
 
 # OEMs Realme
 0.0.0.0 bdapi-ads.realmemobile.com
