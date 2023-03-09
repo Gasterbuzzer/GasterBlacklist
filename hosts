@@ -1363,6 +1363,31 @@ ff02::3 ip6-allhosts
 # OEMs Huawei
 0.0.0.0 grs.hicloud.com
 
+# Yahoo
+0.0.0.0 adtech.yahooinc.com
+
+# Luckyorange
+0.0.0.0 api.luckyorange.com
+0.0.0.0 realtime.luckyorange.com
+
+# Frehsworks
+0.0.0.0 claritybt.freshmarketer.com
+0.0.0.0 fwtracks.freshmarketer.com
+
+# MouseFlow
+0.0.0.0 api.mouseflow.com
+0.0.0.0 tools.mouseflow.com
+0.0.0.0 cdn-test.mouseflow.com
+
+# Hotjar
+0.0.0.0 adm.hotjar.com
+0.0.0.0 identify.hotjar.com
+0.0.0.0 surveys.hotjar.com
+0.0.0.0 events.hotjar.io
+
+# Google Ads
+0.0.0.0 afs.googlesyndication.com
+
 # END of Blacklist
 
 # blacklist
