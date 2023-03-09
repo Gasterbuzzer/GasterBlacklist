@@ -1348,8 +1348,19 @@ ff02::3 ip6-allhosts
 0.0.0.0 runative-syndicate.com
 0.0.0.0 irkantyip.com
 
+# Tiktok
+0.0.0.0 ads-api.tiktok.com
+0.0.0.0 business-api.tiktok.com
 
+# Yandex
+0.0.0.0 appmetrica.yandex.ru
 
+# OEMs Realme
+0.0.0.0 bdapi-ads.realmemobile.com
+0.0.0.0 bdapi-in-ads.realmemobile.com
+
+# OEMs Huawei
+0.0.0.0 grs.hicloud.com
 
 # END of Blacklist
 
