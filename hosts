@@ -1388,6 +1388,9 @@ ff02::3 ip6-allhosts
 # Google Ads
 0.0.0.0 afs.googlesyndication.com
 
+# 11.03.2023
+0.0.0.0 tc-020.astar-cdn.com
+
 # END of Blacklist
 
 # blacklist
