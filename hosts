@@ -1416,6 +1416,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 d18kg2zy9x3t96.cloudfront.net
 0.0.0.0 upsweephalms.com
 
+# 13.03.2023
+0.0.0.0 kotokot.com
+
 # END of Blacklist
 
 # blacklist
