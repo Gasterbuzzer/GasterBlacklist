@@ -58,7 +58,7 @@ def find_url(url):
     found = False
 
     if contains_http(url):
-        print("ERROR: url contains 'http/s' and is not valid.")
+        print("ERROR: url contains 'http/s' and is not valid.\n")
         return
 
     # If it includes "0.0.0.0"
@@ -89,7 +89,7 @@ def add_url(url):
     text = ""
 
     if contains_http(url):
-        print("ERROR: url contains 'http/s' and is not valid.")
+        print("ERROR: url contains 'http/s' and is not valid.\n")
         return
 
     with open(file_name, "r") as f:
