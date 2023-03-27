@@ -88,6 +88,10 @@ def add_url(url):
 
     text = ""
 
+    if contains_http(url):
+        print("ERROR: url contains 'http/s' and is not valid.")
+        return
+
     with open(file_name, "r") as f:
         text = f.read()
 
