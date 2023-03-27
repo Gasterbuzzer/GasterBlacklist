@@ -3,6 +3,8 @@ import fileinput
 
 
 def main():
+    """Main function"""
+
     print("Running console... (Use 'q' or 'quit' to exit) ('h' or 'help' for all commands)\n")
 
     # Interactive Loop
@@ -27,6 +29,8 @@ def main():
 
 
 def complex_command_handling(command):
+    """Handles complex commands requiring parameters"""
+
     if command[:3] == "add":
         # Test URL: tracking.india.miui.com
         add_url(command[4:])
