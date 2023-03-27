@@ -141,6 +141,10 @@ def remove_url(url):
     text = ""
     found = False
 
+    if contains_http(url):
+        print("ERROR: url contains 'http/s' and is not valid.\n")
+        return
+
     # First checks if in list
     with open(file_name, "r") as f:
         text = f.read()
@@ -151,10 +155,6 @@ def remove_url(url):
 
     if not found:
         print("\nERROR: Did not find the url to remove.\n")
-        return
-
-    if contains_http(url):
-        print("ERROR: url contains 'http/s' and is not valid.\n")
         return
 
     for line in fileinput.input(files=file_name, inplace=True):
@@ -171,6 +171,7 @@ def help_print():
     print("\t\t'q' or 'quit' : Quit the program")
     print("\t\t'add %url%'   : Adds url to list (%url% should be a valid url without http or https.)")
     print("\t\t'find %url%'  : Checks if url in list (%url% should be a valid url without http or https.)")
+    print("\t\t'remove %url%': Remove url from list (%url% should be a valid url without http or https.)")
 
     print("\n")
 
