@@ -79,7 +79,7 @@ def find_url(url):
     if found:
         print(f"\nFound URL: '{url_to_find}' in {file_name}.\n")
     else:
-        print(f"\n{url_to_find} is not in {file_name}.\n")
+        print(f"\n'{url_to_find}' is not in {file_name}.\n")
 
 
 def add_url(url):
