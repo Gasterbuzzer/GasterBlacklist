@@ -1,4 +1,5 @@
 from datetime import datetime
+import fileinput
 
 
 def main():
@@ -35,7 +36,11 @@ def complex_command_handling(command):
 
 def add_url(url):
     """Add url to hosts list"""
-    with open("hosts", "r") as f:
+    file_name = "hosts"
+
+    text = ""
+
+    with open(file_name, "r") as f:
         text = f.read()
 
         # Checks if url already in file.
@@ -43,13 +48,24 @@ def add_url(url):
             print(f"Error: URL '{url}' already in list. \n")
             return
 
-        # If not, then we get our current day.
-        day_string = datetime.today().strftime('%d.%m.%Y')  # %Y-%m-%d
-        if day_string in text:
-            print("Test")
-        else:
-            # Create day comment
-            print(f"Test 2: {day_string}")
+    # If not, then we get our current day.
+    day_string = datetime.today().strftime('%d.%m.%Y')  # %Y-%m-%d
+    found = False
+    if day_string in text:
+        print("Day String Found")
+        found = True
+    else:
+        # Create day comment
+        print(f"Day String not Found: {day_string}")
+
+    for line in fileinput.input(files=file_name, inplace=True):
+        print(f'{line}', end='')
+
+        if f"# {day_string}" in line:
+            # Adding URL
+            print(f"0.0.0.0 {url}")
+
+
 
 
 def help_print():
