@@ -36,6 +36,8 @@ def complex_command_handling(command):
         add_url(command[4:])
     elif command[:4] == "find":
         find_url(command[5:])
+    elif command[:6] == "remove":
+        remove_url(command[7:])
     else:
         print(f"Unknown command '{command}'. ('h' or 'help' for all commands)\n")
 
@@ -130,6 +132,36 @@ def add_url(url):
             print(f"0.0.0.0 {url}")
 
     print(f"\nAdded URL: {url} to {file_name} at section {day_string}.\n")
+
+
+def remove_url(url):
+    """Remove url to hosts list"""
+    file_name = "hosts"
+
+    text = ""
+    found = False
+
+    # First checks if in list
+    with open(file_name, "r") as f:
+        text = f.read()
+
+        # Checks if url already in file.
+        if url in text:
+            found = True
+
+    if not found:
+        print("\nERROR: Did not find the url to remove.\n")
+        return
+
+    if contains_http(url):
+        print("ERROR: url contains 'http/s' and is not valid.\n")
+        return
+
+    for line in fileinput.input(files=file_name, inplace=True):
+        if url not in line:
+            print(f'{line}', end='')
+
+    print(f"\nRemoved URL: {url} to {file_name}\n")
 
 
 def help_print():
