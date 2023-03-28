@@ -1447,6 +1447,9 @@ ff02::3 ip6-allhosts
 
 
 # 28.03.2023
+0.0.0.0 js.monitor.azure.com
+0.0.0.0 mem.gfx.ms
+0.0.0.0 srtb.msn.com
 0.0.0.0 sync.inmobi.com
 0.0.0.0 c.bing.com
 0.0.0.0 cm.mgid.com
