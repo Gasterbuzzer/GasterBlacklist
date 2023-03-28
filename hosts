@@ -1447,6 +1447,11 @@ ff02::3 ip6-allhosts
 
 
 # 28.03.2023
+0.0.0.0 geo.yahoo.com
+0.0.0.0 bats.video.yahoo.com
+0.0.0.0 tag.idsync.analytics.yahoo.com
+0.0.0.0 opus.analytics.yahoo.com
+0.0.0.0 video.adaptv.advertising.com
 0.0.0.0 data.cnn.com
 0.0.0.0 cdn.cookielaw.org
 0.0.0.0 lightning.cnn.com
