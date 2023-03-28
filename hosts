@@ -1447,6 +1447,11 @@ ff02::3 ip6-allhosts
 
 
 # 28.03.2023
+0.0.0.0 uk-script.dotmetrics.ne
+0.0.0.0 ted.dailymail.co.uk
+0.0.0.0 scripts.dailymail.co.uk
+0.0.0.0 cmp.dmgmediaprivacy.co.uk
+0.0.0.0 hulkprod.anm.co.uk
 0.0.0.0 geo.yahoo.com
 0.0.0.0 bats.video.yahoo.com
 0.0.0.0 tag.idsync.analytics.yahoo.com
