@@ -1447,6 +1447,10 @@ ff02::3 ip6-allhosts
 
 
 # 28.03.2023
+0.0.0.0 cdn.cookielaw.org
+0.0.0.0 lightning.cnn.com
+0.0.0.0 tag.bounceexchange.com
+0.0.0.0 amplify.outbrain.com
 0.0.0.0 code.jquery.com
 0.0.0.0 acacdn.com
 0.0.0.0 gforanythingam.com
