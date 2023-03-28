@@ -1447,6 +1447,11 @@ ff02::3 ip6-allhosts
 
 
 # 28.03.2023
+0.0.0.0 code.jquery.com
+0.0.0.0 acacdn.com
+0.0.0.0 gforanythingam.com
+0.0.0.0 lywasnothycant.info
+0.0.0.0 qxdownload.com
 0.0.0.0 brucepeterson.private-api.com
 0.0.0.0 glizauvo.net
 0.0.0.0 vvmcxclricxt.com
