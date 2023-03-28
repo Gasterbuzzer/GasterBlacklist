@@ -1447,6 +1447,10 @@ ff02::3 ip6-allhosts
 
 
 # 28.03.2023
+0.0.0.0 cdn.speedcurve.com
+0.0.0.0 fadewaves.com
+0.0.0.0 resourcesssl.newscdn.com.au
+0.0.0.0 tags.tiqcdn.com
 0.0.0.0 jill.fc.yahoo.com
 0.0.0.0 browser.events.data.msn.com
 0.0.0.0 js.monitor.azure.com
