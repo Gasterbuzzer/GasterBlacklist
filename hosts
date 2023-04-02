@@ -1488,6 +1488,10 @@ ff02::3 ip6-allhosts
 # 02.03.2023
 0.0.0.0 aff-tracker.com
 
+
+# 02.04.2023
+0.0.0.0 ddedfearingl.com
+
 # END of Blacklist
 
 # blacklist
