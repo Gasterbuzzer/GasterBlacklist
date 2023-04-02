@@ -1485,6 +1485,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 glizauvo.net
 0.0.0.0 vvmcxclricxt.com
 
+# 02.03.2023
+0.0.0.0 aff-tracker.com
+
 # END of Blacklist
 
 # blacklist
