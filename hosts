@@ -1490,6 +1490,7 @@ ff02::3 ip6-allhosts
 
 
 # 02.04.2023
+0.0.0.0 yieldtrk.com
 0.0.0.0 ddedfearingl.com
 
 # END of Blacklist
