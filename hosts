@@ -1501,6 +1501,7 @@ ff02::3 ip6-allhosts
 
 
 # 15.05.2023
+0.0.0.0 myckdom.com
 0.0.0.0 276887.novitrk8.com
 0.0.0.0 eu.newsarea.org
 0.0.0.0 gandmotivatin.info
