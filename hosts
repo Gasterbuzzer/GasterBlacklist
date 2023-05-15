@@ -1499,6 +1499,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 yieldtrk.com
 0.0.0.0 ddedfearingl.com
 
+
+# 15.05.2023
+0.0.0.0 www.lkscdn.com
+
 # END of Blacklist
 
 # blacklist
