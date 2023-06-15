@@ -1513,6 +1513,12 @@ ff02::3 ip6-allhosts
 0.0.0.0 binedgetech.info
 0.0.0.0 www.lkscdn.com
 
+
+# 15.06.2023
+0.0.0.0 cdn.pubfuture-ad.com
+0.0.0.0 gulsachpyrexia.uno
+0.0.0.0 salpsthiever.digital
+
 # END of Blacklist
 
 # blacklist
