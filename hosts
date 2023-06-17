@@ -1521,6 +1521,8 @@ ff02::3 ip6-allhosts
 
 
 # 17.06.2023
+0.0.0.0 79-70-15-51.instances.scw.cloud
+0.0.0.0 zg-1220b-187.stretchoid.com
 0.0.0.0 papa.damcraft.de
 
 # END of Blacklist
