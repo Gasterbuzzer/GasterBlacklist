@@ -239,7 +239,7 @@ def commit_changes_git() -> None:
     process = subprocess.Popen(["git", "commit", "-m", day_string], stdout=subprocess.PIPE)
     output = process.communicate()[0]
 
-    print(f"\nDebug: Commits the changes with current day as commit message: '{output}'.")
+    print(f"\nDebug: Commits the changes with current day as commit message: '{output}'.\n")
 
 
 def push_changes_git() -> None:
@@ -251,7 +251,7 @@ def push_changes_git() -> None:
     process = subprocess.Popen(["git", "push"], stdout=subprocess.PIPE)
     output = process.communicate()[0]
 
-    print(f"\nDebug: Pushed changes with git: '{output}'.")
+    print(f"\nDebug: Pushed changes with git: '{output}'.\n")
 
 
 def upload_changes() -> None:
