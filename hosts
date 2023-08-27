@@ -1529,6 +1529,10 @@ ff02::3 ip6-allhosts
 # 06.07.2023
 0.0.0.0 oq4e5.tropicgarden.cz
 
+
+# 27.08.2023
+0.0.0.0 zeekaihu.net
+
 # END of Blacklist
 
 # blacklist
