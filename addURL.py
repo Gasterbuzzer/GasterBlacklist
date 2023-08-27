@@ -2,8 +2,10 @@
 Python Bat to add new blocklist Urls.
 """
 
+# Imports
 from datetime import datetime
 import fileinput
+import subprocess
 
 
 def main() -> None:
@@ -12,6 +14,9 @@ def main() -> None:
     """
 
     print("Running console... (Use 'q' or 'quit' to exit) ('h' or 'help' for all commands)\n")
+
+    # Pull current changes to make sure that we don't make any unchanged changes.
+    pull_git()
 
     # Interactive Loop
     active = True
@@ -35,6 +40,9 @@ def main() -> None:
 
             case "help":
                 help_print()
+
+            case "push":
+                upload_changes()
 
             case _:
                 complex_command_handling(user_input)
@@ -195,8 +203,64 @@ def help_print() -> None:
     print("\t\t'add %url%'   : Adds url to list (%url% should be a valid url without http or https.)")
     print("\t\t'find %url%'  : Checks if url in list (%url% should be a valid url without http or https.)")
     print("\t\t'remove %url%': Remove url from list (%url% should be a valid url without http or https.)")
+    print("\t\t'push'        : Pushes changes made to github/repository.")
 
     print("\n")
+
+
+def pull_git() -> None:
+    """
+    Pulls git to get the newest changes.
+    """
+
+    # Run "git pull" at current location.
+    process = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE)
+    output = process.communicate()[0]
+
+    print(f"\nDebug: Git Pull Status: '{output}'.")
+
+
+def commit_changes_git() -> None:
+    """
+    Commits current changes to git.
+    """
+
+    # Run "git add ." at the current location.
+    process = subprocess.Popen(["git", "add", "."], stdout=subprocess.PIPE)
+    output = process.communicate()[0]
+
+    print(f"\nDebug: Git Adds all files not in .gitignore: '{output}'.")
+
+    # Run "git commit -m 'current date'" at the current location.
+
+    # Get the current date as a commit message
+    day_string = datetime.today().strftime('%d.%m.%Y')  # %Y-%m-%d
+
+    process = subprocess.Popen(["git", "commit", "-m", day_string], stdout=subprocess.PIPE)
+    output = process.communicate()[0]
+
+    print(f"\nDebug: Commits the changes with current day as commit message: '{output}'.")
+
+
+def push_changes_git() -> None:
+    """
+    Pushes current changes to git.
+    """
+
+    # Run "git push" at the current location.
+    process = subprocess.Popen(["git", "push"], stdout=subprocess.PIPE)
+    output = process.communicate()[0]
+
+    print(f"\nDebug: Pushed changes with git: '{output}'.")
+
+
+def upload_changes() -> None:
+    """
+    Commits and Pushes current changes.
+    """
+
+    commit_changes_git()
+    push_changes_git()
 
 
 if __name__ == "__main__":
