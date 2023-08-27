@@ -15,7 +15,9 @@ def main() -> None:
 
     # Interactive Loop
     active = True
+
     while active:
+
         print("CMD: ", end="")
         user_input = input()
 
@@ -23,13 +25,17 @@ def main() -> None:
             case "q":
                 active = False
                 break
+
             case "quit":
                 active = False
                 break
+
             case "h":
                 help_print()
+
             case "help":
                 help_print()
+
             case _:
                 complex_command_handling(user_input)
 
@@ -109,13 +115,11 @@ def add_url(url: str) -> None:
 
     file_name = "hosts"
 
-    text = ""
-
     if contains_http(url):
         print("ERROR: url contains 'http/s' and is not valid.\n")
         return
 
-    with open(file_name, "r") as f:
+    with open(file_name) as f:
         text = f.read()
 
         # Checks if url already in file.
@@ -127,10 +131,7 @@ def add_url(url: str) -> None:
     day_string = datetime.today().strftime('%d.%m.%Y')  # %Y-%m-%d
     # day_string = "3" + day_string[1:] # Test if you want to see if the day gets added.
 
-    found = False
-    if day_string in text:
-        found = True
-    else:
+    if day_string not in text:
         # Create day comment
         print(f"Day String not Found: {day_string}, creating one...")
 
@@ -158,7 +159,6 @@ def remove_url(url: str) -> None:
 
     file_name = "hosts"
 
-    text = ""
     found = False
 
     if contains_http(url):
@@ -166,7 +166,7 @@ def remove_url(url: str) -> None:
         return
 
     # First checks if in list
-    with open(file_name, "r") as f:
+    with open(file_name) as f:
         text = f.read()
 
         # Checks if url already in file.
