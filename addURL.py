@@ -1,9 +1,15 @@
+"""
+Python Bat to add new blocklist Urls.
+"""
+
 from datetime import datetime
 import fileinput
 
 
-def main():
-    """Main function"""
+def main() -> None:
+    """
+    Main function
+    """
 
     print("Running console... (Use 'q' or 'quit' to exit) ('h' or 'help' for all commands)\n")
 
@@ -28,8 +34,10 @@ def main():
                 complex_command_handling(user_input)
 
 
-def complex_command_handling(command):
-    """Handles complex commands requiring parameters"""
+def complex_command_handling(command: str) -> None:
+    """
+    Handles complex commands requiring parameters
+    """
 
     if command[:3] == "add":
         # Test URL: tracking.india.miui.com
@@ -42,8 +50,11 @@ def complex_command_handling(command):
         print(f"Unknown command '{command}'. ('h' or 'help' for all commands)\n")
 
 
-def contains_http(url):
-    """Checks if string contains http returns true if true"""
+def contains_http(url: str) -> bool:
+    """
+    Checks if string contains http returns true if true
+    """
+
     contains = False
 
     if "http" in url:
@@ -58,8 +69,11 @@ def contains_http(url):
     return contains
 
 
-def find_url(url):
-    """Prints if url in list"""
+def find_url(url: str) -> None:
+    """
+    Prints if url in a list.
+    """
+
     file_name = "hosts"
     found = False
 
@@ -88,8 +102,11 @@ def find_url(url):
         print(f"\n'{url_to_find}' is not in {file_name}.\n")
 
 
-def add_url(url):
-    """Add url to hosts list"""
+def add_url(url: str) -> None:
+    """
+    Add url to a host list
+    """
+
     file_name = "hosts"
 
     text = ""
@@ -134,8 +151,11 @@ def add_url(url):
     print(f"\nAdded URL: {url} to {file_name} at section {day_string}.\n")
 
 
-def remove_url(url):
-    """Remove url to hosts list"""
+def remove_url(url: str) -> None:
+    """
+    Remove url to a host list
+    """
+
     file_name = "hosts"
 
     text = ""
@@ -164,8 +184,11 @@ def remove_url(url):
     print(f"\nRemoved URL: {url} to {file_name}\n")
 
 
-def help_print():
-    """Prints all commands to console"""
+def help_print() -> None:
+    """
+    Prints all commands to console
+    """
+
     print("\nAll commands: ")
     print("\t\t'h' or 'help' : Shows all commands (currently)")
     print("\t\t'q' or 'quit' : Quit the program")
