@@ -6,6 +6,7 @@ Python Bat to add new blocklist Urls.
 from datetime import datetime
 import fileinput
 import subprocess
+import re
 
 
 def main() -> None:
@@ -169,6 +170,8 @@ def remove_url(url: str) -> None:
 
     found = False
 
+    url_pattern = r'^(?!.*\b{0}\b).*$'.format(re.escape(url))
+
     if contains_http(url):
         print("ERROR: url contains 'http/s' and is not valid.\n")
         return
@@ -178,7 +181,9 @@ def remove_url(url: str) -> None:
         text = f.read()
 
         # Checks if url already in file.
-        if url in text:
+
+        # Updated to check for exact match and nothing else.
+        if re.match(url_pattern, text):
             found = True
 
     if not found:
@@ -186,10 +191,12 @@ def remove_url(url: str) -> None:
         return
 
     for line in fileinput.input(files=file_name, inplace=True):
-        if url not in line:
+
+        # Edited to now check for the exact string and not something that could be it.
+        if not re.match(url_pattern, line):
             print(f'{line}', end='')
 
-    print(f"\nRemoved URL: {url} to {file_name}\n")
+    print(f"\nRemoved URL: {url} from {file_name}\n")
 
 
 def help_print() -> None:
