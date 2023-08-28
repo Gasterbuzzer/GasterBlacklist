@@ -170,7 +170,8 @@ def remove_url(url: str) -> None:
 
     found = False
 
-    url_pattern = r'^(?!.*\b{0}\b).*$'.format(re.escape(url))
+    escaped_search_string = re.escape(url)
+    pattern = r"\b" + escaped_search_string + r"\b"
 
     if contains_http(url):
         print("ERROR: url contains 'http/s' and is not valid.\n")
@@ -183,7 +184,7 @@ def remove_url(url: str) -> None:
         # Checks if url already in file.
 
         # Updated to check for exact match and nothing else.
-        if re.match(url_pattern, text):
+        if bool(re.search(pattern, text)):
             found = True
 
     if not found:
@@ -193,7 +194,7 @@ def remove_url(url: str) -> None:
     for line in fileinput.input(files=file_name, inplace=True):
 
         # Edited to now check for the exact string and not something that could be it.
-        if not re.match(url_pattern, line):
+        if not bool(re.search(pattern, line)):
             print(f'{line}', end='')
 
     print(f"\nRemoved URL: {url} from {file_name}\n")
