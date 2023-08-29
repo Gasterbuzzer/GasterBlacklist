@@ -1578,6 +1578,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 ak.jeekomih.com
 0.0.0.0 ak.psaltauw.net
 
+
+# 29.08.2023
+0.0.0.0 research.2go2.top
+
 # END of Blacklist
 
 # blacklist
