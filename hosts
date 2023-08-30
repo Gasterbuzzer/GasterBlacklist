@@ -1584,6 +1584,8 @@ ff02::3 ip6-allhosts
 
 
 # 30.08.2023
+0.0.0.0 views.asura.gg
+0.0.0.0 static.virgul.com
 0.0.0.0 business.samsungusa.com
 
 # END of Blacklist
