@@ -1582,6 +1582,10 @@ ff02::3 ip6-allhosts
 # 29.08.2023
 0.0.0.0 research.2go2.top
 
+
+# 30.08.2023
+0.0.0.0 business.samsungusa.com
+
 # END of Blacklist
 
 # blacklist
