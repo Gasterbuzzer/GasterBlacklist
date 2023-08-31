@@ -1596,6 +1596,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 static.virgul.com
 0.0.0.0 business.samsungusa.com
 
+
+# 31.08.2023
+0.0.0.0 uewwxpdnbtgi.com
+
 # END of Blacklist
 
 # blacklist
