@@ -45,6 +45,9 @@ def main() -> None:
             case "push":
                 upload_changes()
 
+            case "pull":
+                pull_git()
+
             case _:
                 complex_command_handling(user_input)
 
@@ -212,6 +215,7 @@ def help_print() -> None:
     print("\t\t'find %url%'  : Checks if url in list (%url% should be a valid url without http or https.)")
     print("\t\t'remove %url%': Remove url from list (%url% should be a valid url without http or https.)")
     print("\t\t'push'        : Pushes changes made to github/repository.")
+    print("\t\t'pull'        : Pulls changes made to github/repository.")
 
     print("\n")
 
