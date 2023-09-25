@@ -1616,6 +1616,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 gmnagxbisjn.com
 0.0.0.0 charterunwelcomealibi.com
 
+
+# 25.09.2023
+0.0.0.0 region1.analytics.google.com
+
 # END of Blacklist
 
 # blacklist
