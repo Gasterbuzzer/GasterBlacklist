@@ -1620,6 +1620,14 @@ ff02::3 ip6-allhosts
 # 25.09.2023
 0.0.0.0 region1.analytics.google.com
 
+
+# 26.10.2023
+0.0.0.0 for-j.com
+0.0.0.0 upstandhurls.website
+0.0.0.0 ak.hesoorda.com
+0.0.0.0 danismcajeput.top
+0.0.0.0 avatarsfief.digital
+
 # END of Blacklist
 
 # blacklist
