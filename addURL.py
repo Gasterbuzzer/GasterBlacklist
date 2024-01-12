@@ -261,7 +261,6 @@ def push_changes_git() -> None:
     """
 
     # Run "git push" at the current location.
-    copy_hosts_to_txt()
     process = subprocess.Popen(["git", "push"], stdout=subprocess.PIPE)
     output = process.communicate()[0]
 
@@ -275,17 +274,6 @@ def upload_changes() -> None:
 
     commit_changes_git()
     push_changes_git()
-
-
-def copy_hosts_to_txt() -> None:
-    """
-    As some programms require this, it may be needed to have the file also ready as txt.
-    This will just copy the host file and make it txt.
-    This should be automatically called when pushing to git.
-    """
-    src_dir = "hosts"
-    dst_dir = "hosts.txt"
-    shutil.copy(src_dir, dst_dir)
 
 
 if __name__ == "__main__":
