@@ -1628,6 +1628,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 danismcajeput.top
 0.0.0.0 avatarsfief.digital
 
+
+# 12.01.2024
+0.0.0.0 app-measurement.com
+
 # END of Blacklist
 
 # blacklist
