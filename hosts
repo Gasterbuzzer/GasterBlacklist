@@ -1630,6 +1630,7 @@ ff02::3 ip6-allhosts
 
 
 # 12.01.2024
+0.0.0.0 events.reddit.com
 0.0.0.0 app-measurement.com
 
 # END of Blacklist

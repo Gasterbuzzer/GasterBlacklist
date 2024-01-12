@@ -1615,6 +1615,7 @@ avatarsfief.digital
 
 
 # 12.01.2024
+events.reddit.com
 app-measurement.com
 
 # END of Blacklist
