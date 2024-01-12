@@ -127,6 +127,7 @@ def add_url(url: str) -> None:
     """
 
     file_name = "hosts"
+    file_name_txt_version = "hosts.txt"
 
     if contains_http(url):
         print("ERROR: url contains 'http/s' and is not valid.\n")
@@ -139,6 +140,10 @@ def add_url(url: str) -> None:
         if url in text:
             print(f"Error: URL '{url}' already in list. \n")
             return
+
+    # For txt version:
+    with open(file_name_txt_version) as f:
+        text_txt_version = f.read()
 
     # If not, then we get our current day.
     day_string = datetime.today().strftime('%d.%m.%Y')  # %Y-%m-%d
@@ -162,6 +167,23 @@ def add_url(url: str) -> None:
             # Adding URL
             print(f"0.0.0.0 {url}")
 
+    # Now for txt version:
+    if day_string not in text_txt_version:
+
+        for line in fileinput.input(files=file_name_txt_version, inplace=True):
+            if "# END of Blacklist" in line:
+                # Adding Day String
+                print(f"\n# {day_string}\n")
+
+            print(f'{line}', end='')
+
+    for line in fileinput.input(files=file_name_txt_version, inplace=True):
+        print(f'{line}', end='')
+
+        if f"# {day_string}" in line:
+            # Adding URL
+            print(f"{url}")
+
     print(f"\nAdded URL: {url} to {file_name} at section {day_string}.\n")
 
 
@@ -171,6 +193,7 @@ def remove_url(url: str) -> None:
     """
 
     file_name = "hosts"
+    file_name_txt_version = "hosts"
 
     found = False
 
@@ -191,11 +214,22 @@ def remove_url(url: str) -> None:
         if bool(re.search(pattern, text)):
             found = True
 
+    # Txt Version
+    with open(file_name_txt_version) as f:
+        text_txt_version = f.read()
+
     if not found:
         print("\nERROR: Did not find the url to remove.\n")
         return
 
     for line in fileinput.input(files=file_name, inplace=True):
+
+        # Edited to now check for the exact string and not something that could be it.
+        if not bool(re.search(pattern, line)):
+            print(f'{line}', end='')
+
+    # For TXT now:
+    for line in fileinput.input(files=file_name_txt_version, inplace=True):
 
         # Edited to now check for the exact string and not something that could be it.
         if not bool(re.search(pattern, line)):
