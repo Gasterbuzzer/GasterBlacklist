@@ -1635,6 +1635,9 @@ ff02::3 ip6-allhosts
 
 
 # 13.01.2024
+0.0.0.0 www.visariomedia.com
+0.0.0.0 stats.esecured.net
+0.0.0.0 aitsatho.com
 0.0.0.0 lf.disshipbikinis.com
 0.0.0.0 media.dalysv.com
 0.0.0.0 islerobserpent.com
