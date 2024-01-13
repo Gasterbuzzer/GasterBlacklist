@@ -1635,6 +1635,26 @@ ff02::3 ip6-allhosts
 
 
 # 13.01.2024
+0.0.0.0 notes-analytics-events.apple.com
+0.0.0.0 weather-analytics-events.apple.com
+0.0.0.0 books-analytics-events.apple.com
+0.0.0.0 api-adservices.apple.com
+0.0.0.0 metrics.mzstatic.com
+0.0.0.0 tr.iadsdk.apple.com
+0.0.0.0 adsfs.oppomobile.com
+0.0.0.0 iot-logser.realme.com
+0.0.0.0 iot-eu-logser.realme.com
+0.0.0.0 gemini.yahoo.com
+0.0.0.0 log.fc.yahoo.com
+0.0.0.0 partnerads.ysm.yahoo.com
+0.0.0.0 analytics.query.yahoo.com
+0.0.0.0 udcm.yahoo.com
+0.0.0.0 udc.yahoo.com
+0.0.0.0 log.byteoversea.com
+0.0.0.0 ads.tiktok.com
+0.0.0.0 analytics.pinterest.com
+0.0.0.0 ads.pinterest.com
+0.0.0.0 ads-api.twitter.com
 0.0.0.0 exorateairing.guru
 0.0.0.0 evecticvocoder.life
 0.0.0.0 keapgypsite.website

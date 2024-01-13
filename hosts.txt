@@ -1620,6 +1620,26 @@ app-measurement.com
 
 
 # 13.01.2024
+notes-analytics-events.apple.com
+weather-analytics-events.apple.com
+books-analytics-events.apple.com
+api-adservices.apple.com
+metrics.mzstatic.com
+tr.iadsdk.apple.com
+adsfs.oppomobile.com
+iot-logser.realme.com
+iot-eu-logser.realme.com
+gemini.yahoo.com
+log.fc.yahoo.com
+partnerads.ysm.yahoo.com
+analytics.query.yahoo.com
+udcm.yahoo.com
+udc.yahoo.com
+log.byteoversea.com
+ads.tiktok.com
+analytics.pinterest.com
+ads.pinterest.com
+ads-api.twitter.com
 exorateairing.guru
 evecticvocoder.life
 keapgypsite.website
