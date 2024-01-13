@@ -1633,6 +1633,13 @@ ff02::3 ip6-allhosts
 0.0.0.0 events.reddit.com
 0.0.0.0 app-measurement.com
 
+
+# 13.01.2024
+0.0.0.0 lf.disshipbikinis.com
+0.0.0.0 media.dalysv.com
+0.0.0.0 islerobserpent.com
+0.0.0.0 ak.stoorgel.com
+
 # END of Blacklist
 
 # blacklist
