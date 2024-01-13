@@ -193,7 +193,7 @@ def remove_url(url: str) -> None:
     """
 
     file_name = "hosts"
-    file_name_txt_version = "hosts"
+    file_name_txt_version = "hosts.txt"
 
     found = False
 
