@@ -1635,6 +1635,8 @@ ff02::3 ip6-allhosts
 
 
 # 13.01.2024
+0.0.0.0 config.unityads.unity3d.com
+0.0.0.0 webview.unityads.unity3d.com
 0.0.0.0 notes-analytics-events.apple.com
 0.0.0.0 weather-analytics-events.apple.com
 0.0.0.0 books-analytics-events.apple.com
