@@ -1620,7 +1620,6 @@ app-measurement.com
 
 
 # 13.01.2024
-test.url
 www.visariomedia.com
 stats.esecured.net
 aitsatho.com
