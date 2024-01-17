@@ -496,7 +496,6 @@ hibuy.ir
 analytics-api.samsunghealthcn.com
 oncerensky.cam
 apriceinc.info
-t1.gstatic.com
 bitmosfx.com
 liliy9aydje10.com
 pl15413159.profitablecpmgate.com
@@ -680,7 +679,6 @@ rdr.wargaming.net
 sc-static.net
 xadsmart.com
 cacheorcheck.mopinion.com
-t3.gstatic.com
 use.typekit.net
 adclick.g.doubleclick.net
 prelandappslab.com
@@ -754,7 +752,6 @@ date.whatssexy.com
 getsurv2you.com
 cdn.fluidplayer.com
 phukienthoitranggiare.com
-t0.gstatic.com
 dyagyifrke.com
 syndication.realsrv.com
 ustxsntseyhwsx.com
@@ -949,7 +946,6 @@ www.blockadsnot.com
 2llmonds4ehcr93nb.com
 c.mylot.com
 adxbid.info
-csi.gstatic.com
 493b98cce8bc1a2dd.com
 app.bugsnag.com
 cdn.viglink.com
@@ -1068,7 +1064,6 @@ townofsins.com
 chargerbeakers.com
 fs.supershopdeals.com
 open.oneplus.net
-gstatic.com
 yonhelioliskor.com
 clenchedyouthmatching.com
 hubpiano.com
