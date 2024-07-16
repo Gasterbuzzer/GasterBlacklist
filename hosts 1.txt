@@ -199,6 +199,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 marvellouspeaches.com
 0.0.0.0 mypornsnap.top
 0.0.0.0 tempest.services.disqus.com
+0.0.0.0 s0.wp.com
 0.0.0.0 206.189.132.186
 0.0.0.0 www.propapps.info
 0.0.0.0 yektapress.com
@@ -266,6 +267,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 interwetten.de
 0.0.0.0 foowafoa.com
 0.0.0.0 www98.sbcdnvid.com
+0.0.0.0 nhentai.net
 0.0.0.0 www.bet365.com
 0.0.0.0 argeersarchfoe.com
 0.0.0.0 ytstvmovies.xyz
@@ -288,6 +290,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 phimsex69.xyz
 0.0.0.0 cryptolovers.online
 0.0.0.0 stinkyrats.com
+0.0.0.0 unpkg.com
 0.0.0.0 tillatingmer.fun
 0.0.0.0 d1pfc8jv6lgen6.cloudfront.net
 0.0.0.0 cdn.bannersnack.com
@@ -311,6 +314,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.voured.com
 0.0.0.0 cryptomoneyco.in
 0.0.0.0 famousinternetgirls.com
+0.0.0.0 pornhub.com
+0.0.0.0 www.xvideos2.com
 0.0.0.0 js.smartredirect.de
 0.0.0.0 1sttetracycline.com
 0.0.0.0 pctmix1.com
@@ -511,6 +516,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 analytics-api.samsunghealthcn.com
 0.0.0.0 oncerensky.cam
 0.0.0.0 apriceinc.info
+0.0.0.0 t1.gstatic.com
 0.0.0.0 bitmosfx.com
 0.0.0.0 liliy9aydje10.com
 0.0.0.0 pl15413159.profitablecpmgate.com
@@ -694,6 +700,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 sc-static.net
 0.0.0.0 xadsmart.com
 0.0.0.0 cacheorcheck.mopinion.com
+0.0.0.0 t3.gstatic.com
 0.0.0.0 use.typekit.net
 0.0.0.0 adclick.g.doubleclick.net
 0.0.0.0 prelandappslab.com
@@ -767,6 +774,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 getsurv2you.com
 0.0.0.0 cdn.fluidplayer.com
 0.0.0.0 phukienthoitranggiare.com
+0.0.0.0 t0.gstatic.com
 0.0.0.0 dyagyifrke.com
 0.0.0.0 syndication.realsrv.com
 0.0.0.0 ustxsntseyhwsx.com
@@ -810,6 +818,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 moncoerbb.com
 0.0.0.0 gfruitiesm.com
 0.0.0.0 radikal.ru
+0.0.0.0 multporn.net
 0.0.0.0 cam4-static.xcdnpro.com
 0.0.0.0 srv.aso1.net
 0.0.0.0 chimamanndgaocozmi.com
@@ -895,6 +904,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 fjbatbqiwpxydg.com
 0.0.0.0 pagead2.googlesyndication.com
 0.0.0.0 punlessnis.casa
+0.0.0.0 filmpalast.to
 0.0.0.0 gapscult.com
 0.0.0.0 media.fastclick.net
 0.0.0.0 silaconen.com
@@ -961,6 +971,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 2llmonds4ehcr93nb.com
 0.0.0.0 c.mylot.com
 0.0.0.0 adxbid.info
+0.0.0.0 csi.gstatic.com
 0.0.0.0 493b98cce8bc1a2dd.com
 0.0.0.0 app.bugsnag.com
 0.0.0.0 cdn.viglink.com
@@ -1079,6 +1090,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 chargerbeakers.com
 0.0.0.0 fs.supershopdeals.com
 0.0.0.0 open.oneplus.net
+0.0.0.0 gstatic.com
 0.0.0.0 yonhelioliskor.com
 0.0.0.0 clenchedyouthmatching.com
 0.0.0.0 hubpiano.com
@@ -1189,6 +1201,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 samsung-com.112.2o7.net
 0.0.0.0 www.balthazareviews.com
 0.0.0.0 poplarmakessouls.com
+0.0.0.0 encrypted-tbn0.gstatic.com
 0.0.0.0 i.sbcdn21.com
 0.0.0.0 onmarshtompor.com
 0.0.0.0 bookslas.com
@@ -1462,6 +1475,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 lightning.cnn.com
 0.0.0.0 tag.bounceexchange.com
 0.0.0.0 amplify.outbrain.com
+0.0.0.0 code.jquery.com
 0.0.0.0 acacdn.com
 0.0.0.0 gforanythingam.com
 0.0.0.0 lywasnothycant.info
@@ -1616,62 +1630,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 ak.hesoorda.com
 0.0.0.0 danismcajeput.top
 0.0.0.0 avatarsfief.digital
-
-
-# 12.01.2024
-0.0.0.0 events.reddit.com
-0.0.0.0 app-measurement.com
-
-
-# 13.01.2024
-0.0.0.0 vidhide.com
-0.0.0.0 watchespounceinvolving.com
-0.0.0.0 ak.forooqso.tv
-0.0.0.0 forooqso.tv
-0.0.0.0 ak.peethach.com
-0.0.0.0 ybs2ffs7v.com
-0.0.0.0 fvcwqkkqmuv.com
-0.0.0.0 config.unityads.unity3d.com
-0.0.0.0 webview.unityads.unity3d.com
-0.0.0.0 notes-analytics-events.apple.com
-0.0.0.0 weather-analytics-events.apple.com
-0.0.0.0 books-analytics-events.apple.com
-0.0.0.0 api-adservices.apple.com
-0.0.0.0 metrics.mzstatic.com
-0.0.0.0 tr.iadsdk.apple.com
-0.0.0.0 adsfs.oppomobile.com
-0.0.0.0 iot-logser.realme.com
-0.0.0.0 iot-eu-logser.realme.com
-0.0.0.0 gemini.yahoo.com
-0.0.0.0 log.fc.yahoo.com
-0.0.0.0 partnerads.ysm.yahoo.com
-0.0.0.0 analytics.query.yahoo.com
-0.0.0.0 udcm.yahoo.com
-0.0.0.0 udc.yahoo.com
-0.0.0.0 log.byteoversea.com
-0.0.0.0 ads.tiktok.com
-0.0.0.0 analytics.pinterest.com
-0.0.0.0 ads.pinterest.com
-0.0.0.0 ads-api.twitter.com
-0.0.0.0 exorateairing.guru
-0.0.0.0 evecticvocoder.life
-0.0.0.0 keapgypsite.website
-0.0.0.0 duelerscombat.top
-0.0.0.0 hawsglibly.space
-0.0.0.0 oyglk.altairaquilae.top
-0.0.0.0 stayheretoplay.com
-0.0.0.0 www.visariomedia.com
-0.0.0.0 stats.esecured.net
-0.0.0.0 aitsatho.com
-0.0.0.0 lf.disshipbikinis.com
-0.0.0.0 media.dalysv.com
-0.0.0.0 islerobserpent.com
-0.0.0.0 ak.stoorgel.com
-
-
-# 16.07.2024
-0.0.0.0 region1.google-analytics.com
-0.0.0.0 roastoup.com
 
 # END of Blacklist
 
