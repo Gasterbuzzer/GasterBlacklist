@@ -1655,6 +1655,10 @@ ak.stoorgel.com
 
 
 # 16.07.2024
+analytics-api-samsunghealthcn.com
+nmetrics.samsung.com
+ad.samsungadhub.com
+app.chat.xiaomi.net
 glideimpulseregulate.com
 legalsofafalter.com
 ocsp.sectigo.com

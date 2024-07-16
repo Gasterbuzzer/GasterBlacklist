@@ -1670,6 +1670,10 @@ ff02::3 ip6-allhosts
 
 
 # 16.07.2024
+0.0.0.0 analytics-api-samsunghealthcn.com
+0.0.0.0 nmetrics.samsung.com
+0.0.0.0 ad.samsungadhub.com
+0.0.0.0 app.chat.xiaomi.net
 0.0.0.0 glideimpulseregulate.com
 0.0.0.0 legalsofafalter.com
 0.0.0.0 ocsp.sectigo.com
