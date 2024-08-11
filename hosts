@@ -1703,6 +1703,14 @@ ff02::3 ip6-allhosts
 0.0.0.0 region1.google-analytics.com
 0.0.0.0 roastoup.com
 
+
+# 11.08.2024
+0.0.0.0 fourier.aliexpress.com
+0.0.0.0 fourier.taobao.com
+0.0.0.0 1vkuiy.tdum.alibaba.com
+0.0.0.0 ae.mmstat.com
+0.0.0.0 add tags.creativecdn.com
+
 # END of Blacklist
 
 # blacklist

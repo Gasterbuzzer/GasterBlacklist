@@ -1688,4 +1688,12 @@ ak.zougreek.com
 region1.google-analytics.com
 roastoup.com
 
+
+# 11.08.2024
+fourier.aliexpress.com
+fourier.taobao.com
+1vkuiy.tdum.alibaba.com
+ae.mmstat.com
+add tags.creativecdn.com
+
 # END of Blacklist
