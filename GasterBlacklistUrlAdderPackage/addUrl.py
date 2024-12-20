@@ -56,7 +56,7 @@ def complex_command_handling(command: str) -> None:
 
     # Push git
     elif command_parts[0].lower() == "push" and len(command_parts) == 1:
-        GitHelper.push_changes_git()
+        GitHelper.upload_changes()
 
     # Help command
     elif command_parts[0].lower() in ["h", "help"] and len(command_parts) == 1:
