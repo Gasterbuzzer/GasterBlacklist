@@ -303,50 +303,54 @@ def remove_url(url: str) -> None:
     Remove url to a host list
     """
 
-    file_name = "hosts"
-    file_name_txt_version = "hosts.txt"
-
-    found = False
-
-    escaped_search_string = re.escape(url)
-    pattern = r"\b" + escaped_search_string + r"\b"
+    FILE_NAME = "hosts"
+    FILE_NAME_TXT_VERSION = "hosts.txt"
 
     if contains_http(url):
-        print("ERROR: url contains 'http/s' and is not valid.\n")
+        print("WARNING: Given URL starts with 'http/s' or similar and is thus not valid. Attempted removal:\n")
+        url = remove_http(url)
+        print(f"'{url}'\n")
+
+    # If it includes "0.0.0.0" we remove it from the beginning
+    if "0.0.0.0" in url[:8]:
+        print("WARNING: Given url started with '0.0.0.0', attempting to remove it:")
+        url = url.replace("0.0.0.0", "")
+        print(f"{url}\n")
+
+    if not find_url(url):
+        print(f"ERROR: URL '{url}' is not in the list. \n")
         return
 
-    # First checks if in list
-    with open(file_name) as f:
-        text = f.read()
+    # Now we search for it and delete it, since we know from above that it exists, we can easily delete it.
+    with open(FILE_NAME, "r+") as file:
+        all_lines_host_normal = file.readlines()
+        # We read backwards since its more likely to find the day string at end rather than earlier
+        line_index = len(all_lines_host_normal) - 1
+        while True:
+            if line_index <= 0 or line_index >= len(all_lines_host_normal):
+                break
 
-        # Checks if url already in file.
+            if url == all_lines_host_normal[line_index]:
+                all_lines_host_normal.pop(line_index) # Pop it out of existence
+                file.writelines(all_lines_host_normal)
+                break
+            line_index -= 1  # We didn't find the day string
+    with open(FILE_NAME_TXT_VERSION, "r+") as file:
+        all_lines_host_txt = file.readlines()
+        # We read backwards since its more likely to find the day string at end rather than earlier
+        line_index = len(all_lines_host_txt) - 1
+        while True:
+            if line_index <= 0 or line_index >= len(all_lines_host_txt):
+                break
 
-        # Updated to check for exact match and nothing else.
-        if bool(re.search(pattern, text)):
-            found = True
+            if url == all_lines_host_txt[line_index]:
+                all_lines_host_txt.pop(line_index) # Pop it out of existence
+                file.writelines(all_lines_host_normal)
+                break
+            line_index -= 1  # We didn't find the day string
 
-    # Text Version
-    with open(file_name_txt_version) as f:
-        text_txt_version = f.read()
 
-    if not found:
-        print("\nERROR: Did not find the url to remove.\n")
-        return
-
-    for line in fileinput.input(files=file_name, inplace=True):
-
-        # Edited to now check for the exact string and not something that could be it.
-        if not bool(re.search(pattern, line)):
-            print(f'{line}', end='')
-
-    # For TXT now:
-    for line in fileinput.input(files=file_name_txt_version, inplace=True):
-
-        # Edited to now check for the exact string and not something that could be it.
-        if not bool(re.search(pattern, line)):
-            print(f'{line}', end='')
-
-    print(f"\nRemoved URL: {url} from {file_name}\n")
+    print(f"\nRemoved URL: {url} from {FILE_NAME} and from {FILE_NAME_TXT_VERSION}\n")
 
 
 def help_print() -> None:

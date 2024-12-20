@@ -1709,7 +1709,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 fourier.taobao.com
 0.0.0.0 1vkuiy.tdum.alibaba.com
 0.0.0.0 ae.mmstat.com
-0.0.0.0 add tags.creativecdn.com
+0.0.0.0 tags.creativecdn.com
 
 # END of Blacklist
 
