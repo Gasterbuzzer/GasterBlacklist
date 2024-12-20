@@ -356,7 +356,7 @@ def remove_url(url: str) -> None:
                 file.seek(0)  # Move to the beginning of the file
                 file.truncate()  # Clear the entire file content
 
-                file.writelines(all_lines_host_normal)
+                file.writelines(all_lines_host_txt)
                 break
             line_index -= 1  # We didn't find the day string
 
