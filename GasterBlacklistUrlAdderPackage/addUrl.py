@@ -330,8 +330,10 @@ def remove_url(url: str) -> None:
             if line_index <= 0 or line_index >= len(all_lines_host_normal):
                 break
 
-            if url == all_lines_host_normal[line_index]:
+            if f"0.0.0.0 {url}\n" == all_lines_host_normal[line_index]:
+                print("Test")
                 all_lines_host_normal.pop(line_index) # Pop it out of existence
+                open(FILE_NAME, "w").close()  # Clear file
                 file.writelines(all_lines_host_normal)
                 break
             line_index -= 1  # We didn't find the day string
@@ -343,8 +345,9 @@ def remove_url(url: str) -> None:
             if line_index <= 0 or line_index >= len(all_lines_host_txt):
                 break
 
-            if url == all_lines_host_txt[line_index]:
+            if f"{url}\n" == all_lines_host_txt[line_index]:
                 all_lines_host_txt.pop(line_index) # Pop it out of existence
+                open(FILE_NAME_TXT_VERSION, "w").close()  # Clear file
                 file.writelines(all_lines_host_normal)
                 break
             line_index -= 1  # We didn't find the day string
