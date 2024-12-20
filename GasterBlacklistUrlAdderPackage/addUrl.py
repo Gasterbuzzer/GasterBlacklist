@@ -33,8 +33,13 @@ def complex_command_handling(command: str) -> None:
     # Split commands
     command_parts = command.split()
 
+    # Check if empty command
+    if len(command_parts) <= 0:
+        print("\nERROR: Invalid command structure.\n")
+        return
+
     # Add a new url to list
-    if command_parts[0].lower() == "add" and len(command_parts) == 2:
+    elif command_parts[0].lower() == "add" and len(command_parts) == 2:
         add_url(command_parts[1])
 
     # Check if an url exists
