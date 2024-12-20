@@ -1,10 +1,12 @@
 """
 Small package for displaying and processing commands.
 """
-import fileinput
 # Imports
 from datetime import datetime
-import re
+
+# Constants
+FILE_NAME = "hosts"
+FILE_NAME_TXT_VERSION = "hosts.txt"
 
 from GasterBlacklistUrlAdderPackage.gitHelper import GitHelper
 
@@ -80,7 +82,7 @@ def remove_http(url: str) -> str:
     :return: Url without front part.
     """
 
-    url_front_part = url[:8].replace("http://", "").replace("https://", "").replace("http", "").replace("http", "")
+    url_front_part = url[:8].replace("http://", "").replace("https://", "").replace("http", "").replace("http", "") # noqa
     url_back_part = url[8:]
 
     return url_front_part + url_back_part
@@ -94,7 +96,6 @@ def find_url(url: str) -> bool:
     """
 
     # We only need to search in one file, not both
-    FILE_NAME = "hosts"
 
     if contains_http(url):
         print("WARNING: Given URL starts with 'http/s' or similar and is thus not valid. Attempted removal:\n")
@@ -146,9 +147,7 @@ def add_url(url: str) -> None:
     :param url: Url to add to the list
     """
 
-    FILE_NAME = "hosts"
-    FILE_NAME_TXT_VERSION = "hosts.txt"
-
+    # noinspection DuplicatedCode
     if contains_http(url):
         print("WARNING: Given URL starts with 'http/s' or similar and is thus not valid. Attempted removal:\n")
         url = remove_http(url)
@@ -169,9 +168,6 @@ def add_url(url: str) -> None:
     write_position_normal = -1
     write_position_txt = -1
 
-    all_lines_host_normal = [] # Initialize list empty
-    all_lines_host_txt = [] # Initialize list empty
-
     with open(FILE_NAME, "r") as file:
 
         all_lines_host_normal = file.readlines()
@@ -187,6 +183,7 @@ def add_url(url: str) -> None:
                 print(f"\nFound day string in file at {line_index}.\n")
 
                 # Find end of section or end of blacklist
+                # noinspection DuplicatedCode
                 while True:
                     line_index += 1 # Go forward
                     if "# END of Blacklist" in all_lines_host_normal[line_index] or (all_lines_host_normal[line_index] in ["", "\n", " "]): # End of blacklist or end of section
@@ -211,6 +208,7 @@ def add_url(url: str) -> None:
             if line_index <= 0 or line_index >= len(all_lines_host_txt):
                 break
 
+            # noinspection DuplicatedCode
             if f"# {day_string}\n" == all_lines_host_txt[line_index]:
                 # Find end of section or end of blacklist, which is different for this file.
                 while True:
@@ -229,6 +227,7 @@ def add_url(url: str) -> None:
             line_index -= 1  # We didn't find the day string
 
     # If we arrive here, we check if we found a write position
+    # noinspection DuplicatedCode
     if write_position_normal == -1:
         # We did not find a day string.
         # So we add a new section at the bottom
@@ -256,6 +255,7 @@ def add_url(url: str) -> None:
             line_index -= 1
 
     # If we arrive here, we check if we found a write position for the txt version
+    # noinspection DuplicatedCode
     if write_position_txt == -1:
         # We did not find a day string.
         # So we add a new section at the bottom
@@ -303,9 +303,7 @@ def remove_url(url: str) -> None:
     Remove url to a host list
     """
 
-    FILE_NAME = "hosts"
-    FILE_NAME_TXT_VERSION = "hosts.txt"
-
+    # noinspection DuplicatedCode
     if contains_http(url):
         print("WARNING: Given URL starts with 'http/s' or similar and is thus not valid. Attempted removal:\n")
         url = remove_http(url)
