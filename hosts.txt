@@ -1696,4 +1696,9 @@ fourier.taobao.com
 ae.mmstat.com
 tags.creativecdn.com
 
+# 20.12.2024
+nozoakamsaun.net
+st.zarebasdezaley.com
+
+
 # END of Blacklist

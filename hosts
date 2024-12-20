@@ -1711,6 +1711,11 @@ ff02::3 ip6-allhosts
 0.0.0.0 ae.mmstat.com
 0.0.0.0 tags.creativecdn.com
 
+# 20.12.2024
+0.0.0.0 nozoakamsaun.net
+0.0.0.0 st.zarebasdezaley.com
+
+
 # END of Blacklist
 
 # blacklist
