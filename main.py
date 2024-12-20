@@ -7,7 +7,6 @@ from datetime import datetime
 import fileinput
 import subprocess
 import re
-import shutil
 
 
 def main() -> None:
@@ -20,21 +19,15 @@ def main() -> None:
     # Pull current changes to make sure that we don't make any unchanged changes.
     pull_git()
 
-    # Interactive Loop
-    active = True
-
-    while active:
-
+    while True:
         print("CMD: ", end="")
         user_input = input()
 
         match user_input:  # Matches quick commands, if not in list, passes it go complex commands
             case "q":
-                active = False
                 break
 
             case "quit":
-                active = False
                 break
 
             case "h":
@@ -72,20 +65,11 @@ def complex_command_handling(command: str) -> None:
 def contains_http(url: str) -> bool:
     """
     Checks if string contains http returns true if true
+    :param url: Url to check if contains http
+    :return: True if contains http or any prefix of that similar matter
     """
 
-    contains = False
-
-    if "http" in url:
-        contains = True
-    elif "https" in url:
-        contains = True
-    elif "http://" in url:
-        contains = True
-    elif "https://" in url:
-        contains = True
-
-    return contains
+    return url.startswith("http")
 
 
 def find_url(url: str) -> None:
@@ -214,7 +198,7 @@ def remove_url(url: str) -> None:
         if bool(re.search(pattern, text)):
             found = True
 
-    # Txt Version
+    # Text Version
     with open(file_name_txt_version) as f:
         text_txt_version = f.read()
 
