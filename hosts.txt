@@ -1708,6 +1708,7 @@ fastlycdn.com
 
 # 24.04.2025
 nvpartnerspromo.com
+d-max.net
 
 
 # END of Blacklist
