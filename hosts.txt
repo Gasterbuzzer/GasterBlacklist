@@ -1706,4 +1706,8 @@ misdeedtucked.shop
 fastlycdn.com
 
 
+# 24.04.2025
+nvpartnerspromo.com
+
+
 # END of Blacklist

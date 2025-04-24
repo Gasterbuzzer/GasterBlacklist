@@ -1721,6 +1721,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 fastlycdn.com
 
 
+# 24.04.2025
+0.0.0.0 nvpartnerspromo.com
+
+
 # END of Blacklist
 
 # blacklist
