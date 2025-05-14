@@ -1,4 +1,4 @@
-# GasterBlacklist
+# GasterBlocklist
 
 Short list of malicious/advertisement sites. 
 
