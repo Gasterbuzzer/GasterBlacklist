@@ -4,10 +4,11 @@ hosts_lines
 backup/
 /.idea/.gitignore
 /.idea/GasterBlacklist.iml
+/.idea/GasterBlocklist.iml
 /.idea/runConfigurations/Main.xml
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/vcs.xml
-GasterBlacklistUrlAdderPackage/__pycache__/
+GasterBlocklistUrlAdderPackage/__pycache__/

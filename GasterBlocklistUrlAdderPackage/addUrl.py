@@ -8,7 +8,7 @@ from datetime import datetime
 FILE_NAME = "hosts"
 FILE_NAME_TXT_VERSION = "hosts.txt"
 
-from GasterBlacklistUrlAdderPackage.gitHelper import GitHelper
+from GasterBlocklistUrlAdderPackage.gitHelper import GitHelper
 
 def main() -> None:
     """
